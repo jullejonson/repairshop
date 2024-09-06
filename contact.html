@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktinfo</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" />
+    <!-- Google Fonts: Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header inclusion -->
+    <div id="header"></div>
+
+    <main role="main" class="pb-3">
+        <div class="contact-page-header text-center my-4">
+            <h1>Kontaktinfo</h1>
+        </div>
+
+        <div class="container">
+            <div class="contact-section my-5">
+                <div class="row">
+                    <!-- Contact Information Column -->
+                    <div class="col-md-6 contact-info">
+                        <h2 class="font-weight-bold">Kontaktuppgifter</h2>
+                        <p>Järnvägsgatan 36, 434 41 Kungsbacka</p>
+                        <p>Telefon: 0300-32 25 00</p>
+                        <p>E-post: kungsbackacarfix@gmail.com</p>
+
+                        <h3>Öppettider</h3>
+                        <p>Måndag-Fredag 07:00 - 16:00</p>
+                        <p>Lördag Stängt</p>
+                        <p>Söndag Stängt</p>
+                    </div>
+
+                    <!-- Map Column -->
+                    <div class="col-md-6">
+                        <!-- Adjust the src attribute to your location -->
+                        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.7070309999998!2d12.03417431529581!3d57.48720798104561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46451677f44e6dbd%3A0xbedff6dc88b4a32a!2sJ%C3%A4rnv%C3%A4gsgatan%2036%2C%20434%2041%20Kungsbacka%2C%20Sweden!5e0!3m2!1sen!2sus!4v1631023836000!5m2!1sen!2sus"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer inclusion -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to include header and footer -->
+    <script>
+        // Include header and footer content dynamically
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+
+    <!-- Additional JavaScript files -->
+        <!-- jQuery (necessary for the carousel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JavaScript (for the carousel and other components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

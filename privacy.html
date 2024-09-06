@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integritetspolicy</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" />
+    <!-- Google Fonts: Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header inclusion -->
+    <div id="header"></div>
+
+    <main role="main" class="pb-3">
+        <div class="privacy-policy-container">
+            <h2 class="integrityHeader">Integritetspolicy</h2>
+            <p>Vi värnar om din personliga integritet och strävar efter att skydda dina personuppgifter. Denna integritetspolicy förklarar hur vi samlar in och använder dina uppgifter när du besöker vår webbplats.</p>
+
+            <h3>Vilken information samlar vi in?</h3>
+            <p>Vi kan samla in viss information när du besöker vår webbplats:</p>
+            <ul>
+                <li>Personliga uppgifter som du ger oss när du kontaktar oss via vårt kontaktformulär (som namn och e-postadress).</li>
+                <li>Automatisk information genom cookies, som inkluderar data om ditt besök på vår webbplats, din IP-adress och webbläsarens aktivitet.</li>
+                <li>Tredjepartstjänster som Google Maps kan samla in information i samband med visning av kartor.</li>
+            </ul>
+
+            <h3>Hur använder vi din information?</h3>
+            <p>Den insamlade informationen används för att:</p>
+            <ul>
+                <li>Förbättra användarupplevelsen på vår webbplats.</li>
+                <li>Anpassa innehållet efter dina preferenser.</li>
+                <li>Förstå hur vår webbplats används och för att optimera prestanda.</li>
+            </ul>
+
+            <h3>Cookies</h3>
+            <p>Vår webbplats använder cookies för att förbättra din upplevelse. En cookie är en liten fil som lagras på din enhet när du besöker vår webbplats. Dessa cookies hjälper oss att förstå hur du använder vår webbplats och anpassa innehållet efter dina behov.</p>
+            <p>Vi använder tredjepartstjänster som Google Maps som kan placera cookies. Genom att använda vår webbplats godkänner du användningen av dessa cookies. Du kan blockera eller ta bort cookies genom dina webbläsarinställningar.</p>
+
+            <h3>Tredjepartstjänster</h3>
+            <p>Vi använder tredjepartstjänster, inklusive Google Maps, som kan samla in data och använda cookies. Vi ansvarar inte för dessa tjänsters integritetspraxis. Läs mer om <a href="https://policies.google.com/privacy" target="_blank">Googles integritetspolicy</a>.</p>
+
+            <h3>Dina rättigheter</h3>
+            <p>Enligt GDPR har du rätt att begära tillgång till de personuppgifter vi har om dig, begära att de rättas eller raderas, samt invända mot behandling av dina personuppgifter. Kontakta oss om du vill utöva någon av dessa rättigheter.</p>
+
+            <h3>Kontakta oss</h3>
+            <p>Om du har frågor om vår integritetspolicy eller hur vi använder dina data, vänligen kontakta oss på:</p>
+            <p>Email: kungsbackacarfix@gmail.com</p>
+
+            <h3>Ändringar i integritetspolicyn</h3>
+            <p>Vi kan komma att uppdatera denna integritetspolicy. Vi uppmuntrar dig att regelbundet granska denna sida för att hålla dig informerad om eventuella ändringar.</p>
+        </div>
+    </main>
+
+    <!-- Footer inclusion -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to include header and footer -->
+    <script>
+        // Include header and footer content dynamically
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+
+    <!-- Additional JavaScript files -->
+        <!-- jQuery (necessary for the carousel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JavaScript (for the carousel and other components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

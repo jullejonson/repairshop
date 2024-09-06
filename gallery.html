@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Header</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" />
+        <!-- Google Fonts: Orbitron -->
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header inclusion -->
+    <div id="header"></div>
+
+    <main role="main" class="pb-3">
+        <div class="gallery-container my-5">
+            <h2 class="gallery-title text-center mb-4">Före- och efterbilder: Se våra framstående reparationer</h2>
+            <p class="text-center mb-5">Ta en titt på våra reparationer där vi har förvandlat skadade fordon till deras ursprungliga skick. Oavsett om det gäller plåt-, lack- eller plastreparationer, är vi experter på att ge din bil nytt liv.</p>
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="before-after">
+                        <img src="galleryImages/Gallery1-1.jpg" alt="Before Repair" class="gallery-image">
+                        <img src="galleryImages/Gallery1-2.jpg" alt="After Repair" class="gallery-image">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="before-after">
+                        <img src="galleryImages/Gallery2-1.jpg" alt="Before Repair" class="gallery-image">
+                        <img src="galleryImages/Gallery2-2.jpg" alt="After Repair" class="gallery-image">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="before-after">
+                        <img src="galleryImages/Gallery3-1.jpg" alt="Before Repair" class="gallery-image">
+                        <img src="galleryImages/Gallery3-2.jpg" alt="After Repair" class="gallery-image">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="before-after">
+                        <img src="galleryImages/Gallery4-1.jpg" alt="Before Repair" class="gallery-image">
+                        <img src="galleryImages/Gallery4-2.jpg" alt="After Repair" class="gallery-image">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="before-after">
+                        <img src="galleryImages/Gallery5-1.jpg" alt="Before Repair" class="gallery-image">
+                        <img src="galleryImages/Gallery5-2.jpg" alt="After Repair" class="gallery-image">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="before-after">
+                        <img src="galleryImages/Gallery6-1.jpg" alt="Before Repair" class="gallery-image">
+                        <img src="galleryImages/Gallery6-2.jpg" alt="After Repair" class="gallery-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer inclusion -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to include header and footer -->
+    <script>
+        // Include header and footer content dynamically
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+
+    <!-- Additional JavaScript files -->
+    <!-- jQuery (necessary for the carousel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JavaScript (for the carousel and other components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your custom JavaScript file -->
+<script src="script.js"></script>
+</body>
+
+</html>

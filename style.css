@@ -1,0 +1,410 @@
+html {
+    font-size: 14px;
+  }
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  }
+  
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+    
+  #navbarNavDropdown{
+      text-align: right;
+  }
+  /*navbar styling*/
+  /* Change navbar link color */
+  .navbar-dark .navbar-nav .nav-link {
+      color: white !important;
+  }
+  
+  /* Change navbar brand color */
+  .navbar-dark .navbar-brand {
+      color: white !important;
+  }
+  
+  /* Adjust the color for active or hovered links as needed */
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link.active {
+      color: #cccccc !important; /* Lighter grey for hover/focus/active states */
+  }
+  
+  .navbar {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 16px; /* Adjust size as needed */
+      text-transform: uppercase; /* Optional, for all caps */
+      font-weight: 400; /* Adjust weight to match the style */
+  }
+  
+  /*end of navbar styling*/
+  
+  /*frontpage*/
+  
+  .logo {
+    width: 150px; /* Set a fixed width */
+    height: auto; /* Let the height adjust proportionally */
+    max-height: 50px; /* Ensure the logo doesn't exceed 50px in height */
+    min-height: 30px; /* Set a minimum height for logos */
+    object-fit: contain; /* Ensures the logo fits without being cropped */
+    display: block;
+    margin: 10px auto; /* Add vertical margin to create spacing between logos */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+      /* Hover state */
+      .logo:hover {
+          transform: scale(1.2); /* Enlarge the logo by 20% */
+      }
+  
+  
+  .servicesHeader, .partnerHeader {
+      text-align: center;
+      margin-bottom: 30px; /* Increase the margin below the title */
+      font-family: 'Orbitron', sans-serif; /* Apply the same font as navbar for consistency */
+      font-size: 28px; /* Slightly larger font size for the title */
+  }
+  
+  /*end of frontpage*/
+  
+  /*footer styling*/
+  footer {
+      color: white;
+  }
+  
+      footer h5 {
+          color: #ddd;
+          margin-bottom: 15px;
+      }
+  
+      footer a.text-white {
+          color: #ddd;
+          transition: color 0.2s;
+      }
+  
+          footer a.text-white:hover {
+              color: #fff;
+              text-decoration: none;
+          }
+  
+      footer p {
+          font-size: 0.9em;
+          color: #6c757d;
+      }
+  
+      footer .fa-facebook-f,
+      footer .fa-instagram,
+      footer .fa-linkedin,
+      footer .fa-youtube {
+          /*  font-size: 1.2em;*/
+          font-size: 2.0em;
+          margin-right: 10px;
+          color: white;
+          transition: transform 0.3s ease; /* Smooth transition */
+      }
+  
+  .fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin:hover
+  {
+      transform: scale(1.2); /* Enlarge the logo by 20% */
+  }
+
+
+  /*end footer styling*/
+  
+  /*Contact*/
+  
+  .contact-section {
+      background-color: #f8f9fa;  /*Light grey background, adjust the color to match your theme */
+      border-radius: 15px;  /*Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /*Subtle shadow to 'pop out' */
+      overflow: hidden;  /*Ensures the inner content respects the border radius */
+      justify-content: center;
+  }
+  
+  .contact-info {
+      padding: 20px; /* Spacing inside the contact information area */
+      background-color: #ffffff; /* White background for the contact info */
+      border-radius: 15px 0 0 15px; /* Rounded corners on the left side */
+  }
+  
+  .contact-page-header, repair-page-header {
+      width: 100%;
+      padding: 20px 0;
+  
+      text-align: center;
+      margin-bottom: 30px; /* Increase the margin below the title */
+      font-family: 'Orbitron', sans-serif; /* Apply the same font as navbar for consistency */
+      font-size: 28px; /* Slightly larger font size for the title */
+      /* Add any additional styling you want for this header, such as background-color, text-transform, etc. */
+  }
+  
+  /* Ensure the map iframe has no border and fills its container */
+  iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+  }
+  
+  @media (max-width: 767px) {
+      /* On smaller screens, make the border-radius apply to all corners */
+      .contact-info {
+          border-radius: 15px 15px 0 0;
+      }
+  }
+  
+  
+  /*End of contact*/
+  
+  /*Repair*/
+  
+  .submission-form {
+      background-color: #f8f9fa;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: auto;
+      max-width: 95%;
+  }
+  
+      .submission-form h2 {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+  
+  .submission-instructions {
+      margin-bottom: 20px;
+  }
+  
+  .image-upload-container {
+      text-align: center;
+      margin-top: 20px;
+  }
+  
+  .image-upload-instructions {
+      margin-bottom: 10px;
+  }
+  
+  /*End of Repair*/
+  
+  /* Additional styles for responsiveness and other adjustments */
+  
+  /*#region FrontPage*/
+  
+  
+  /*#endregion*/
+  
+  /*#region FronpageCarousel*/
+  .carousel-item {
+      transition: opacity 0.5s ease-in-out; /* Smooth and slow fade transition */
+  }
+  
+  .carousel-item img {
+      width: 100%;
+      height: 80vh;
+      object-fit: cover;
+      animation-name: zoom;
+      animation-duration: 9.5s; /* Matches the carousel's interval */
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out; /**/ /*Smooth transition effect */
+      animation-iteration-count: infinite;
+  }
+  
+  .carousel .carousel-item-next,
+  .carousel .carousel-item-prev,
+  .carousel .active.carousel-item-left,
+  .carousel .active.carousel-item-right {
+      transform: translateX(0);
+  }
+  
+  @keyframes zoom {
+      0%, 100% {
+          transform: scale(1);
+      }
+      50% {
+          transform: scale(1.03);
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .carousel-item img {
+          height: 50vh;
+      }
+  }
+  
+  .carousel {
+      width: 100%;
+      overflow: hidden;
+  }
+  /*#endregion*/
+  
+  
+  /*GALLERY*/
+  
+  .gallery-container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  .gallery-title {
+      /* text-align: center;
+      margin-bottom: 20px;*/
+  
+      text-align: center;
+      margin-bottom: 30px; /* Increase the margin below the title */
+      font-family: 'Orbitron', sans-serif; /* Apply the same font as navbar for consistency */
+      font-size: 28px; /* Slightly larger font size for the title */
+  }
+  
+  .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  
+  .gallery-item {
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Base styles for larger screens */
+  .before-after {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .gallery-image {
+      width: 500px; /* Adjust width as needed */
+      height: auto;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+      .before-after {
+          flex-direction: column; /* Stack images vertically */
+      }
+  
+      .gallery-image {
+          width: 100%; /* Full width images on smaller screens */
+      }
+  }
+  
+  .gallery-item:hover {
+      transform: scale(1.05);
+  }
+  
+  .description {
+      text-align: center;
+      padding: 10px;
+  }
+  
+  /*END OF GALLERY SECTION*/
+  
+  /*COOKIE BANNER*/
+  
+  .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+      color: white;
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+      display: none; /* Hidden by default */
+  }
+  
+      .cookie-banner p {
+          margin: 0;
+          font-size: 14px;
+          display: inline;
+      }
+  
+      .cookie-banner a {
+          color: #f1c40f; /* Link color */
+          text-decoration: underline;
+      }
+  
+      .cookie-banner .btn {
+          background-color: #f1c40f; /* Button color */
+          border: none;
+          padding: 10px 20px;
+          margin-left: 20px;
+          cursor: pointer;
+          font-size: 14px;
+          color: #000;
+      }
+  
+  /*END OF COOKIE BANNER*/
+  
+  
+  /*//INTEGRITY*/
+  .privacy-policy-container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.6;
+      color: #333;
+  }
+  
+  .integrityHeader {
+      text-align: center;
+      margin-bottom: 30px; /* Increase the margin below the title */
+      font-family: 'Orbitron', sans-serif; /* Apply the same font as navbar for consistency */
+      font-size: 28px; /* Slightly larger font size for the title */
+  }
+  
+  .privacy-policy-container h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  
+      .privacy-policy-container h3 {
+          font-size: 1.5rem;
+          margin-top: 30px;
+      }
+  
+      .privacy-policy-container p {
+          font-size: 1rem;
+          margin: 10px 0;
+      }
+  
+      .privacy-policy-container ul {
+          margin-left: 20px;
+      }
+  
+          .privacy-policy-container ul li {
+              margin-bottom: 10px;
+          }
+  
+      .privacy-policy-container a {
+          color: #007bff;
+          text-decoration: underline;
+      }
+  
+          .privacy-policy-container a:hover {
+              color: #0056b3;
+              text-decoration: none;
+          }
+  
+  footer a.text-policy {
+      color: #ccc; /* Subtle color for privacy link */
+      text-decoration: none;
+  }
+  
+      footer a.text-policy:hover {
+          color: #fff; /* Brighten color on hover */
+          text-decoration: underline;
+      }
+
